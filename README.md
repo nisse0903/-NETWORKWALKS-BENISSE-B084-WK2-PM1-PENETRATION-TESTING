@@ -91,7 +91,7 @@ whois networkwalks.com
 
 Returned the registry domain ID, registrar (GoDaddy), creation and expiry dates, domain status flags, and name servers. The registrant details are masked behind a privacy service.
 
-<!-- ADD SCREENSHOT: save your whois screenshot as images/01-whois.png -->
+
 ![whois screenshot](images/01-whois.png)
 
 ### Step 2: nslookup (Name to IP Resolution)
@@ -102,7 +102,7 @@ nslookup networkwalks.com
 
 Resolved the domain to its server name and IP address (`192.232.216.135`).
 
-<!-- ADD SCREENSHOT: save your nslookup screenshot as images/02-nslookup.png -->
+
 ![nslookup screenshot](images/02-nslookup.png)
 
 ### Step 3: dnsrecon (DNS Enumeration)
@@ -113,7 +113,7 @@ dnsrecon -d networkwalks.com
 
 Enumerated SOA, NS, MX, A, TXT (including SPF), and SRV records, revealing the domain's DNS footprint and mail infrastructure.
 
-<!-- ADD SCREENSHOT: save your dnsrecon screenshot as images/03-dnsrecon.png -->
+
 ![dnsrecon screenshot](images/03-dnsrecon.png)
 
 ### Step 4: curl (HTTP Headers)
@@ -124,7 +124,7 @@ curl -I https://networkwalks.com
 
 Displayed the HTTP response headers, including the server type, cookies, and caching/security-related headers.
 
-<!-- ADD SCREENSHOT: save your curl screenshot as images/04-curl.png -->
+
 ![curl screenshot](images/04-curl.png)
 
 ### Step 5: whatweb (Technology Fingerprinting)
@@ -135,7 +135,7 @@ whatweb networkwalks.com
 
 Revealed the general software stack, including the Apache web server, WordPress with WP Download Manager (via the MetaGenerator tag), jQuery, and Bootstrap.
 
-<!-- ADD SCREENSHOT: save your whatweb screenshot as images/05-whatweb.png -->
+
 ![whatweb screenshot](images/05-whatweb.png)
 
 ### Step 6: wafw00f (WAF Detection)
@@ -146,7 +146,7 @@ wafw00f https://networkwalks.com
 
 Confirmed the site is protected by **ModSecurity (SpiderLabs) WAF**.
 
-<!-- ADD SCREENSHOT: save your wafw00f screenshot as images/06-wafw00f.png -->
+
 ![wafw00f screenshot](images/06-wafw00f.png)
 
 > Taken together, these results allow a full profile of the target to be compiled.
@@ -159,7 +159,7 @@ Confirmed the site is protected by **ModSecurity (SpiderLabs) WAF**.
 
 Download Zenmap directly from the official website of its developers to ensure a legitimate installation.
 
-<!-- ADD SCREENSHOT: save your Zenmap GUI screenshot as images/07-zenmap-gui.png -->
+
 ![Zenmap GUI](images/07-zenmap-gui.png)
 
 ### Step 2: Get the IP address and subnet
@@ -172,24 +172,23 @@ ipconfig
 
 This identifies the machine's **IP address** and **LAN subnet**.
 
-<!-- ADD SCREENSHOT: save your ipconfig screenshot as images/08-ipconfig.png -->
+
 ![ipconfig screenshot](images/08-ipconfig.png)
 
 ### Step 3: Enter the target and run the scan
 
-Put the subnet (for example, `192.168.1.0/24`) in Zenmap's **Target** field so the scan covers the entire local network instead of a single device. Run the scan and review the results:
+Put the subnet (for example, `192.***.*.*/24`) in Zenmap's **Target** field so the scan covers the entire local network instead of a single device. Run the scan and review the results:
 
 - Total number of active hosts in the subnet
 - IP address and MAC address of each host
 
-<!-- ADD SCREENSHOT: save your scan results screenshot as images/09-zenmap-scan-results.png -->
 Note: Screen capture for this is omitted for privacy.
 
 ### Step 4: Generate the network topology
 
 Open the **Topology** tab to visually represent how the discovered devices are connected, then save it as both **PNG** and **PDF**.
 Note: IP addresses are blurred for privacy.
-<!-- ADD SCREENSHOT: save your topology screenshot as images/10-zenmap-topology.png -->
+
 ![Zenmap topology](images/10-zenmap-topology.png)
 
 ### Step 5: Compare results
