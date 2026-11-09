@@ -177,7 +177,7 @@ This identifies the machine's **IP address** and **LAN subnet**.
 
 ### Step 3: Enter the target and run the scan
 
-Put the subnet (for example, `192.***.*.*/24`) in Zenmap's **Target** field so the scan covers the entire local network instead of a single device. Run the scan and review the results:
+Put the subnet (for example, `192.168.1.0/24`) in Zenmap's **Target** field so the scan covers the entire local network instead of a single device. Run the scan and review the results:
 
 - Total number of active hosts in the subnet
 - IP address and MAC address of each host
