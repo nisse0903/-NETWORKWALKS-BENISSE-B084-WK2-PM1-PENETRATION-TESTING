@@ -1,0 +1,2 @@
+# -NETWORKWALKS-BENISSE-B084-WK2-PM1-PENETRATION-TESTING
+This contains my works for week two. 
