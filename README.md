@@ -103,7 +103,7 @@ nslookup networkwalks.com
 Resolved the domain to its server name and IP address (`192.232.216.135`).
 
 
-![nslookup screenshot](images/02-nslookup.png)
+![nslookup screenshot](nslookup.png)
 
 ### Step 3: dnsrecon (DNS Enumeration)
 
@@ -114,7 +114,7 @@ dnsrecon -d networkwalks.com
 Enumerated SOA, NS, MX, A, TXT (including SPF), and SRV records, revealing the domain's DNS footprint and mail infrastructure.
 
 
-![dnsrecon screenshot](images/03-dnsrecon.png)
+![dnsrecon screenshot](dnsrecon.png)
 
 ### Step 4: curl (HTTP Headers)
 
@@ -125,7 +125,7 @@ curl -I https://networkwalks.com
 Displayed the HTTP response headers, including the server type, cookies, and caching/security-related headers.
 
 
-![curl screenshot](images/04-curl.png)
+![curl screenshot](curl.png)
 
 ### Step 5: whatweb (Technology Fingerprinting)
 
@@ -136,7 +136,7 @@ whatweb networkwalks.com
 Revealed the general software stack, including the Apache web server, WordPress with WP Download Manager (via the MetaGenerator tag), jQuery, and Bootstrap.
 
 
-![whatweb screenshot](images/05-whatweb.png)
+![whatweb screenshot](whatweb.png)
 
 ### Step 6: wafw00f (WAF Detection)
 
@@ -147,7 +147,7 @@ wafw00f https://networkwalks.com
 Confirmed the site is protected by **ModSecurity (SpiderLabs) WAF**.
 
 
-![wafw00f screenshot](images/06-wafw00f.png)
+![wafw00f screenshot](wafwoof.png)
 
 > Taken together, these results allow a full profile of the target to be compiled.
 
@@ -160,7 +160,7 @@ Confirmed the site is protected by **ModSecurity (SpiderLabs) WAF**.
 Download Zenmap directly from the official website of its developers to ensure a legitimate installation.
 
 
-![Zenmap GUI](images/07-zenmap-gui.png)
+![Zenmap GUI](zenmap-gui.png)
 
 ### Step 2: Get the IP address and subnet
 
@@ -173,7 +173,7 @@ ipconfig
 This identifies the machine's **IP address** and **LAN subnet**.
 
 
-![ipconfig screenshot](images/08-ipconfig.png)
+![ipconfig screenshot](ipconfig.png)
 
 ### Step 3: Enter the target and run the scan
 
@@ -189,7 +189,7 @@ Note: Screen capture for this is omitted for privacy.
 Open the **Topology** tab to visually represent how the discovered devices are connected, then save it as both **PNG** and **PDF**.
 Note: IP addresses are blurred for privacy.
 
-![Zenmap topology](images/10-zenmap-topology.png)
+![Zenmap topology](zenmap-topology.png)
 
 ### Step 5: Compare results
 
