@@ -92,7 +92,7 @@ whois networkwalks.com
 Returned the registry domain ID, registrar (GoDaddy), creation and expiry dates, domain status flags, and name servers. The registrant details are masked behind a privacy service.
 
 
-![whois screenshot](images/01-whois.png)
+![whois screenshot](whois.png)
 
 ### Step 2: nslookup (Name to IP Resolution)
 
